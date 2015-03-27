@@ -26,9 +26,13 @@ path = remote_object.get_attr_wi("navit",iter)
 navit = bus.get_object('org.navit_project.navit', path[1])
 iface.attr_iter_destroy(iter)
 
-directory=sys.argv[1]
-if not os.path.exists(directory):
-    os.makedirs(directory)
+gpx_directory=sys.argv[1]
+if not os.path.exists(gpx_directory):
+    os.makedirs(gpx_directory)
+
+junit_directory=sys.argv[2]
+if not os.path.exists(junit_directory):
+    os.makedirs(junit_directory)
 
 tests=[]
 for filename in glob.glob('*.yaml'):
@@ -54,3 +58,6 @@ for filename in glob.glob('*.yaml'):
 
 ts = [TestSuite("Navit routing tests", tests)]
 print(TestSuite.to_xml_string(ts))
+
+with open(junit_directory+'/output.xml') as f:
+    ts.write_to_file(f, prettyprint=False)
