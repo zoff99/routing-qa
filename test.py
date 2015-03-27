@@ -6,6 +6,7 @@ import time
 import lxml.etree
 import gobject
 import sys
+import os
 from subprocess import call
 from junit_xml import TestSuite, TestCase
 
