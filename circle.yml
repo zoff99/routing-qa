@@ -33,5 +33,5 @@ test:
     - ./navit:
         pwd: bin/navit/
         background: true
-    - python test.py $CIRCLE_TEST_REPORTS/
+    - python test.py $CIRCLE_ARTIFACTS/ $CIRCLE_TEST_REPORTS/
     - dbus-send  --print-reply --session --dest=org.navit_project.navit /org/navit_project/navit/default_navit org.navit_project.navit.navit.quit
