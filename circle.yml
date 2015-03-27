@@ -9,7 +9,12 @@ dependencies:
     - sudo apt-get install libfreetype6-dev
     - sudo apt-get install libdbus-glib-1-dev
     - sudo apt-get install g++
-    - bash build.sh
+    - git clone https://github.com/navit-gps/navit.git
+    - mkdir bin
+    - cmake ../navit -Dgraphics/qt_qpainter:BOOL=FALSE -Dgui/qml:BOOL=FALSE:
+        pwd: bin
+    - make -j32:
+        pwd: bin
   cache_directories:
     - "~/assets/"
 test:
