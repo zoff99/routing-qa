@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - mkdir ~/assets/
+    - [ -d ~/assets/ ] || mkdir ~/assets/
     - wget -c -O ~/assets/california-latest.bin https://circle-artifacts.com/gh/navit-gps/navit/43/artifacts/0/home/ubuntu/assets/binmaps/california-latest.bin
     - sudo apt-get install cmake
     - sudo apt-get install libpng12-dev 
