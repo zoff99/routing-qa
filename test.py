@@ -5,6 +5,7 @@ from dbus import glib
 import time
 import lxml.etree
 import gobject
+import sys
 from subprocess import call
 from junit_xml import TestSuite, TestCase
 
@@ -24,7 +25,7 @@ path = remote_object.get_attr_wi("navit",iter)
 navit = bus.get_object('org.navit_project.navit', path[1])
 iface.attr_iter_destroy(iter)
 
-directory=
+directory=sys.argv[1]
 if not os.path.exists(directory):
     os.makedirs(directory)
 
@@ -40,9 +41,9 @@ for filename in glob.glob('*.yaml'):
     navit.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
     # FIXME : we should listen to a dbus signal notifying that the routing is complete instead
     time.sleep(1)
-    navit.export_as_gpx(filename + ".gpx")
+    navit.export_as_gpx(directory+"/"+filename + ".gpx")
 
-    doc = lxml.etree.parse(filename+".gpx")
+    doc = lxml.etree.parse(directory+"/"+filename+".gpx")
     rtept_count = doc.xpath('count(//rtept)')
 
     test_cases = TestCase(filename, '', time.time() - start_time, '', '')
