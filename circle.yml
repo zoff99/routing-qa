@@ -9,7 +9,7 @@ dependencies:
     - sudo apt-get install libfreetype6-dev
     - sudo apt-get install libdbus-glib-1-dev
     - sudo apt-get install g++
-    - bash ~/build.sh
+    - bash build.sh
   cache_directories:
     - "~/assets/"
 test:
