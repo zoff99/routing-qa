@@ -57,7 +57,6 @@ for filename in glob.glob('*.yaml'):
     tests.append(test_cases)
 
 ts = [TestSuite("Navit routing tests", tests)]
-print(TestSuite.to_xml_string(ts))
 
-with open(junit_directory+'/output.xml') as f:
-    ts.write_to_file(f, prettyprint=False)
+with open(junit_directory+'output.xml', 'w+') as f:
+    TestSuite.to_file(f, ts, prettyprint=False)
