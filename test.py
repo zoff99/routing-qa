@@ -53,7 +53,8 @@ for filename in glob.glob('*.yaml'):
 
     test_cases = TestCase(filename, '', time.time() - start_time, '', '')
     if not(eval(str(rtept_count) + dataMap['success']['operator'] + str(dataMap['success']['value']))):
-        test_cases.add_failure_info('navigation items count mismatch')
+        test_cases.add_failure_info('navigation items count mismatch [ got ' + \
+            str(rtept_count) + ", expected " + dataMap['success']['operator'] + str(dataMap['success']['value']) ) 
     tests.append(test_cases)
 
 ts = [TestSuite("Navit routing tests", tests)]
