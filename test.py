@@ -45,7 +45,7 @@ for filename in glob.glob('*.yaml'):
     navit.set_position("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
     navit.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
     # FIXME : we should listen to a dbus signal notifying that the routing is complete instead
-    time.sleep(1)
+    time.sleep(5)
     navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
 
     doc = lxml.etree.parse(gpx_directory+"/"+filename+".gpx")
