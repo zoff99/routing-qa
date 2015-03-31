@@ -44,35 +44,40 @@ for filename in glob.glob('*.yaml'):
     dataMap = yaml.safe_load(f)
     f.close()
     start_time = time.time()
-    navit.set_center_by_string("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
-    navit.clear_destination()
-    navit.set_position("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
-    navit.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
-    # FIXME : we should listen to a dbus signal notifying that the routing is complete instead
-    timeout=30
-    status=-1
-    while timeout>0 and ( status!=33 and status!=17):
-        try:
-           status=route.get_attr("route_status")[1]
-           distance=route.get_attr("destination_length")[1]
-           print "Route status : "+str(status)+", distance : "+str(distance)
-        except:
-           time.sleep(1)
-        timeout-=1
-    navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
+    try:
+        navit.set_center_by_string("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
+        navit.clear_destination()
+        navit.set_position("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
+        navit.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
+        # FIXME : we should listen to a dbus signal notifying that the routing is complete instead
+        timeout=30
+        status=-1
+        while timeout>0 and ( status!=33 and status!=17):
+            try:
+               status=route.get_attr("route_status")[1]
+               distance=route.get_attr("destination_length")[1]
+               print "Route status : "+str(status)+", distance : "+str(distance)
+            except:
+               time.sleep(1)
+            timeout-=1
+        navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
 
-    test_cases = TestCase(filename, '', time.time() - start_time, '', '')
-    if dataMap['success']['source'] == 'gpx' :
-        doc = lxml.etree.parse(gpx_directory+"/"+filename+".gpx")
-        rtept_count = doc.xpath('count(//rtept)')
-    
-        if not(eval(str(rtept_count) + dataMap['success']['operator'] + str(dataMap['success']['value']))):
-            test_cases.add_failure_info('navigation items count mismatch [ got ' + \
-                str(rtept_count) + ", expected " + dataMap['success']['operator'] + str(dataMap['success']['value']) ) 
-    elif dataMap['success']['source'] == 'dbus' :
-        if not(eval(dataMap['success']['item'] + dataMap['success']['operator'] + str(dataMap['success']['value']))):
-            test_cases.add_failure_info('dbus result mismatch [ got ' + \
-                str(eval(str(dataMap['success']['item']))) + dataMap['success']['operator'] + str(dataMap['success']['value']) )
+        test_cases = TestCase(filename, '', time.time() - start_time, '', '')
+        if dataMap['success']['source'] == 'gpx' :
+            doc = lxml.etree.parse(gpx_directory+"/"+filename+".gpx")
+            rtept_count = doc.xpath('count(//rtept)')
+        
+            if not(eval(str(rtept_count) + dataMap['success']['operator'] + str(dataMap['success']['value']))):
+                test_cases.add_failure_info('navigation items count mismatch [ got ' + \
+                    str(rtept_count) + ", expected " + dataMap['success']['operator'] + str(dataMap['success']['value']) ) 
+        elif dataMap['success']['source'] == 'dbus' :
+            if not(eval(dataMap['success']['item'] + dataMap['success']['operator'] + str(dataMap['success']['value']))):
+                test_cases.add_failure_info('dbus result mismatch [ got ' + \
+                    str(eval(str(dataMap['success']['item']))) + dataMap['success']['operator'] + str(dataMap['success']['value']) )
+    except:
+       # We had a failure, like navit crash, dbus timeout, ...
+       test_cases = TestCase(filename, '', time.time() - start_time, '', '')
+       test_cases.add_error_info('test failed')
     tests.append(test_cases)
 
 ts = [TestSuite("Navit routing tests", tests)]
