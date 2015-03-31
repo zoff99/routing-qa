@@ -49,10 +49,16 @@ for filename in glob.glob('*.yaml'):
     navit.set_position("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
     navit.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
     # FIXME : we should listen to a dbus signal notifying that the routing is complete instead
-    time.sleep(1) 
-    status=route.get_attr("route_status")[1]
-    distance=route.get_attr("destination_length")[1]
-    print "Route status : "+str(status)+", distance : "+str(distance)
+    timeout=30
+    status=-1
+    while timeout>0 and ( status!=33 and status!=17):
+        try:
+           status=route.get_attr("route_status")[1]
+           distance=route.get_attr("destination_length")[1]
+           print "Route status : "+str(status)+", distance : "+str(distance)
+        except:
+           time.sleep(1)
+        timeout-=1
     navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
 
     test_cases = TestCase(filename, '', time.time() - start_time, '', '')
