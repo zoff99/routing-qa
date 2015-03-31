@@ -7,6 +7,7 @@ to:
     lat: 37.8371386
     lng: -122.2926929
 success:
-    item: 'nodes'
-    value: 0
-    operator: '<'
+    source: 'dbus'
+    item: 'distance'
+    value: 60
+    operator: '>'

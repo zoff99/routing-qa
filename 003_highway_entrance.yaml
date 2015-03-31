@@ -7,6 +7,7 @@ to:
     lat: 38.5996633
     lng: -122.8621565
 success:
+    source: 'gpx'
     item: 'nodes'
     value: 0
     operator: '<'
