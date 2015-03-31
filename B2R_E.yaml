@@ -8,7 +8,7 @@ to:
   lng: 11.5869507
 
 success:
-    source: 'gpx'
-    item: 'nodes'
-    value: 1
-    operator: '>'
+    source: 'dbus'
+    item: 'status'
+    value: 33
+    operator: '=='
