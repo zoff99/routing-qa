@@ -50,17 +50,20 @@ for filename in glob.glob('*.yaml'):
         navit.set_position("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
         navit.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
         # FIXME : we should listen to a dbus signal notifying that the routing is complete instead
-        timeout=30
+        timeout=20
         status=-1
         while timeout>0 and ( status!=33 and status!=17):
             try:
                status=route.get_attr("route_status")[1]
                distance=route.get_attr("destination_length")[1]
-               print "Route status : "+str(status)+", distance : "+str(distance)
+               print "Route status : "+str(status)+", distance : "+str(distance)+ ", duration : "+str(time.time() - start_time)
             except:
                time.sleep(1)
             timeout-=1
-        navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
+        if timeout>0 :
+            navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
+        else:
+            print "No route found, last status : " + str(status) + ", duration : "+str(time.time() - start_time)
 
         test_cases = TestCase(filename, '', time.time() - start_time, '', '')
         if dataMap['success']['source'] == 'gpx' :
@@ -76,6 +79,8 @@ for filename in glob.glob('*.yaml'):
                     str(eval(str(dataMap['success']['item']))) + dataMap['success']['operator'] + str(dataMap['success']['value']) )
     except:
        # We had a failure, like navit crash, dbus timeout, ...
+
+       print "This test failed. Maybe a missing map?"
        test_cases = TestCase(filename, '', time.time() - start_time, '', '')
        test_cases.add_error_info('test failed')
     tests.append(test_cases)
