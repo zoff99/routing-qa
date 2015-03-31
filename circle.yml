@@ -28,7 +28,8 @@ test:
         pwd: bin/navit/
     - sed -i -e 's@libbinding_dbus.so" active="no"@libbinding_dbus.so" active="yes"@' navit.xml:
         pwd: bin/navit/
-    - echo '<map type="binfile" data="~/assets/california-latest.bin" />' > planet.xml:
+# FIXME : maps should be defined in the yaml and managed via the python script
+    - echo '<map type="binfile" data="~/assets/california-latest.bin" />' > maps/california.xml:
         pwd: bin/navit/
     - ./navit:
         pwd: bin/navit/
