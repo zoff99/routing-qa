@@ -23,14 +23,11 @@ navit_object = bus.get_object("org.navit_project.navit", # Connection name
 iface = dbus.Interface(navit_object, dbus_interface="org.navit_project.navit")
 iter = iface.attr_iter()
 path = navit_object.get_attr_wi("navit",iter)
-navit2 = bus.get_object('org.navit_project.navit', path[1])
+navit = bus.get_object('org.navit_project.navit', path[1])
 iface.attr_iter_destroy(iter)
 
 route_object = bus.get_object('org.navit_project.navit', '/org/navit_project/navit/default_navit/default_route' )
 route = dbus.Interface(route_object, 'org.navit_project.navit.route')
-
-# Fixme : remove
-navit =  dbus.Interface( navit_object, dbus_interface='org.navit_project.navit.navit');
 
 gpx_directory=sys.argv[1]
 if not os.path.exists(gpx_directory):
@@ -50,7 +47,7 @@ for filename in glob.glob('*.yaml'):
     navit.set_center_by_string("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
     navit.clear_destination()
     navit.set_position("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
-    navit2.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
+    navit.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
     # FIXME : we should listen to a dbus signal notifying that the routing is complete instead
     time.sleep(1) 
     status=route.get_attr("route_status")[1]
