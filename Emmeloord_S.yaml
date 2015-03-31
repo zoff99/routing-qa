@@ -1,0 +1,14 @@
+#control
+# Emmeloord_S
+from:
+  lat: 52.6831133
+  lng: 5.7416967
+to:
+  lat: 52.6416616
+  lng: 5.8136431
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

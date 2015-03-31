@@ -1,0 +1,14 @@
+# expected: keep left
+# Imst_A12_W
+from:
+  lat: 47.2227609
+  lng: 10.7519953
+to:
+  lat: 47.1673728
+  lng: 10.5872366
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

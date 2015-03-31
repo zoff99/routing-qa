@@ -1,0 +1,14 @@
+#Vilnius_Augustow 25.338496 54.722023 22.9639599 53.8329705
+# Vilnius_Suwalki
+from:
+  lat: 54.722023
+  lng: 25.338496
+to:
+  lat: 54.1277582
+  lng: 22.9472479
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

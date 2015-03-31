@@ -1,0 +1,14 @@
+# interchange with exit, leaving motorway (expected: exit right)
+# Merelbeke_Exit
+from:
+  lat: 50.97222317339164
+  lng: 3.8298204583910644
+to:
+  lat: 51.00518871028347
+  lng: 3.778962199734684
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

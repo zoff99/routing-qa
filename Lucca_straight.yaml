@@ -1,0 +1,14 @@
+# expected: go straight/slightly left (counterclockwise)
+# Lucca_straight
+from:
+  lat: 43.8379873
+  lng: 10.4951033
+to:
+  lat: 43.8412217
+  lng: 10.4947132
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

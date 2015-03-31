@@ -1,0 +1,14 @@
+# expected: turn right (or easily right)
+# Aalter_right
+from:
+  lat: 51.0740589
+  lng: 3.4562561
+to:
+  lat: 51.0777988
+  lng: 3.4497076
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

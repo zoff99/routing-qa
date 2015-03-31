@@ -1,0 +1,14 @@
+#missing announcement
+# Nuernberg_N
+from:
+  lat: 49.4085208
+  lng: 11.1956694
+to:
+  lat: 49.4965279
+  lng: 11.2825354
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

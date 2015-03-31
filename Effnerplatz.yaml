@@ -1,0 +1,14 @@
+# two-pass U turn
+# Effnerplatz
+from:
+  lat: 48.1550317
+  lng: 11.6165189
+to:
+  lat: 48.1547549
+  lng: 11.6170732
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

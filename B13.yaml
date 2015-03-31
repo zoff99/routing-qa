@@ -1,0 +1,14 @@
+# Tests for missing or unnecessary announcements
+# B13
+from:
+  lat: 48.2104044
+  lng: 11.5872539
+to:
+  lat: 48.25165
+  lng: 11.580226
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

@@ -1,0 +1,648 @@
+# Emeryville
+from:
+  lat: 37.8439930619099130
+  lng: -122.2937179811110866
+to:
+from:
+  lat: 37.8233168235070281
+  lng: -122.2647238525362638
+
+# B13
+from:
+  lat: 48.2104044
+  lng: 11.5872539
+to:
+from:
+  lat: 48.25165
+  lng: 11.580226
+
+# Eschenried
+from:
+  lat: 48.1217347
+  lng: 11.5026473
+to:
+from:
+  lat: 48.1995844
+  lng: 11.4097391
+
+# Ammerseestr
+from:
+  lat: 48.1217347
+  lng: 11.5026473
+to:
+from:
+  lat: 48.1237784
+  lng: 11.484457
+
+# Senoji_Varena
+from:
+  lat: 54.3490669
+  lng: 24.7205264
+to:
+from:
+  lat: 54.251295
+  lng: 24.5466889
+
+# Wettingen
+from:
+  lat: 47.4270615
+  lng: 8.4915559
+to:
+from:
+  lat: 47.4504179
+  lng: 8.3439187
+
+# Urdorf
+from:
+  lat: 47.4270615
+  lng: 8.4915559
+to:
+from:
+  lat: 47.3940008
+  lng: 8.4171643
+
+# Vievis
+from:
+  lat: 54.871362
+  lng: 25.0643171
+to:
+from:
+  lat: 54.7693774
+  lng: 24.8158205
+
+# Rongellen
+from:
+  lat: 46.4626607
+  lng: 9.1923326
+to:
+from:
+  lat: 46.673579
+  lng: 9.443444
+
+# Medels
+from:
+  lat: 46.4626607
+  lng: 9.1923326
+to:
+from:
+  lat: 46.5483953
+  lng: 9.2966653
+
+# Sufers_SW
+from:
+  lat: 46.4626607
+  lng: 9.1923326
+to:
+from:
+  lat: 46.5694106
+  lng: 9.3681405
+
+# Ausserferrera
+from:
+  lat: 46.4626607
+  lng: 9.1923326
+to:
+from:
+  lat: 46.556617
+  lng: 9.4393332
+
+# Andeer
+from:
+  lat: 46.4626607
+  lng: 9.1923326
+to:
+from:
+  lat: 46.6022237
+  lng: 9.4267816
+
+# San_Bernardino
+from:
+  lat: 46.673579
+  lng: 9.443444
+to:
+from:
+  lat: 46.4626607
+  lng: 9.1923326
+
+# Sufers_NE
+from:
+  lat: 46.673579
+  lng: 9.443444
+to:
+from:
+  lat: 46.5694106
+  lng: 9.3681405
+
+# Arbedo_Castione
+from:
+  lat: 46.3163555
+  lng: 9.1977032
+to:
+from:
+  lat: 46.2130041
+  lng: 9.0428477
+
+# Roveredo_SW
+from:
+  lat: 46.3163555
+  lng: 9.1977032
+to:
+from:
+  lat: 46.2336662
+  lng: 9.1240505
+
+# Lostallo
+from:
+  lat: 46.1952327
+  lng: 9.0291322
+to:
+from:
+  lat: 46.3163555
+  lng: 9.1977032
+
+# Roveredo_NE
+from:
+  lat: 46.1952327
+  lng: 9.0291322
+to:
+from:
+  lat: 46.2336662
+  lng: 9.1240505
+
+# A92
+from:
+  lat: 48.5364928
+  lng: 12.1517654
+to:
+from:
+  lat: 48.2266316
+  lng: 11.4676387
+
+# Via_Graf
+from:
+  lat: 45.5133242
+  lng: 9.1439748
+to:
+from:
+  lat: 45.5146592
+  lng: 9.1391345
+
+# Langwieder_See
+from:
+  lat: 48.1648526
+  lng: 11.457781
+to:
+from:
+  lat: 48.1983823
+  lng: 11.4120844
+
+# Eschenlohe
+from:
+  lat: 48.0129575
+  lng: 11.4173773
+to:
+from:
+  lat: 47.5870372
+  lng: 11.1746427
+
+# Ehrwald
+from:
+  lat: 47.4828025
+  lng: 11.0399926
+to:
+from:
+  lat: 47.406412
+  lng: 10.9167358
+
+# Imst_B171
+from:
+  lat: 47.2298023
+  lng: 10.7452466
+to:
+from:
+  lat: 47.2261087
+  lng: 10.7485459
+
+# Ternat
+from:
+  lat: 50.891674
+  lng: 4.1218235
+to:
+from:
+  lat: 50.8814575
+  lng: 4.1664836
+
+# B2R_E
+from:
+  lat: 48.1073781
+  lng: 11.579841
+to:
+from:
+  lat: 48.1046773
+  lng: 11.5869507
+
+# B2R_W
+from:
+  lat: 48.107829
+  lng: 11.5798342
+to:
+from:
+  lat: 48.1119554
+  lng: 11.5730886
+
+# LaisvesPr_left
+from:
+  lat: 54.6700242
+  lng: 25.2319015
+to:
+from:
+  lat: 54.6708375
+  lng: 25.2023902
+
+# LaisvesPr_right
+from:
+  lat: 54.6700242
+  lng: 25.2319015
+to:
+from:
+  lat: 54.6732973
+  lng: 25.22343
+
+# Werder_W
+from:
+  lat: 52.3098972
+  lng: 12.8770471
+to:
+from:
+  lat: 52.3411968
+  lng: 12.7570371
+
+# Werder_N
+from:
+  lat: 52.3098972
+  lng: 12.8770471
+to:
+from:
+  lat: 52.3945037
+  lng: 12.8387374
+
+# Hamburg_Sued_S
+from:
+  lat: 53.508260
+  lng: 10.073060
+to:
+from:
+  lat: 53.498250
+  lng: 10.037430
+
+# Hamburg_Sued_N
+from:
+  lat: 53.508260
+  lng: 10.073060
+to:
+from:
+  lat: 53.5205165
+  lng: 10.0262508
+
+# Nuernberg_W
+from:
+  lat: 49.4085208
+  lng: 11.1956694
+to:
+from:
+  lat: 49.4696947
+  lng: 11.1860095
+
+# Nuernberg_N
+from:
+  lat: 49.4085208
+  lng: 11.1956694
+to:
+from:
+  lat: 49.4965279
+  lng: 11.2825354
+
+# Unterinntal_W
+from:
+  lat: 47.7371683
+  lng: 12.1034461
+to:
+from:
+  lat: 47.8163105
+  lng: 12.0157491
+
+# Unterinntal_E
+from:
+  lat: 47.7259879
+  lng: 12.1229121
+to:
+from:
+  lat: 47.7990707
+  lng: 12.1675812
+
+# Emmeloord_N
+from:
+  lat: 52.6831133
+  lng: 5.7416967
+to:
+from:
+  lat: 52.7201317
+  lng: 5.7716005
+
+# Emmeloord_S
+from:
+  lat: 52.6831133
+  lng: 5.7416967
+to:
+from:
+  lat: 52.6416616
+  lng: 5.8136431
+
+# Petuelring
+from:
+  lat: 48.1781212
+  lng: 11.5750121
+to:
+from:
+  lat: 48.178083
+  lng: 11.5719105
+
+# Nuernberg_S
+from:
+  lat: 49.4700395
+  lng: 11.18529
+to:
+from:
+  lat: 49.4099119
+  lng: 11.1957442
+
+# Nuernberg_E
+from:
+  lat: 49.4700395
+  lng: 11.18529
+to:
+from:
+  lat: 49.4374417
+  lng: 11.2694876
+
+# Ichostrasse_S
+from:
+  lat: 48.1158902
+  lng: 11.5797705
+to:
+from:
+  lat: 48.1147486
+  lng: 11.5766389
+
+# Ichostrasse_SE
+from:
+  lat: 48.1158902
+  lng: 11.5797705
+to:
+from:
+  lat: 48.1154427
+  lng: 11.5784323
+
+# Merelbeke_R4
+from:
+  lat: 50.97222317339164
+  lng: 3.8298204583910644
+to:
+from:
+  lat: 51.010994974398095
+  lng: 3.751473665864085
+
+# Merelbeke_Exit
+from:
+  lat: 50.97222317339164
+  lng: 3.8298204583910644
+to:
+from:
+  lat: 51.00518871028347
+  lng: 3.778962199734684
+
+# Brugge
+from:
+  lat: 51.1386845
+  lng: 3.2515552
+to:
+from:
+  lat: 51.1720398
+  lng: 3.2098421
+
+# Imst_A12_W
+from:
+  lat: 47.2227609
+  lng: 10.7519953
+to:
+from:
+  lat: 47.1673728
+  lng: 10.5872366
+
+# Imst_A12_E
+from:
+  lat: 47.2227609
+  lng: 10.7519953
+to:
+from:
+  lat: 47.237412
+  lng: 10.8440223
+
+# Kruishoutem
+from:
+  lat: 50.9148007
+  lng: 3.4905054
+to:
+from:
+  lat: 50.9187998
+  lng: 3.5010574
+
+# Effnerplatz
+from:
+  lat: 48.1550317
+  lng: 11.6165189
+to:
+from:
+  lat: 48.1547549
+  lng: 11.6170732
+
+# Aalter_straight
+from:
+  lat: 51.0740589
+  lng: 3.4562561
+to:
+from:
+  lat: 51.0809038
+  lng: 3.4452393
+
+# Aalter_right
+from:
+  lat: 51.0740589
+  lng: 3.4562561
+to:
+from:
+  lat: 51.0777988
+  lng: 3.4497076
+
+# Aalter_left
+from:
+  lat: 51.0740589
+  lng: 3.4562561
+to:
+from:
+  lat: 51.0759766
+  lng: 3.4473245
+
+# Aalter_sharp_left
+from:
+  lat: 51.0740589
+  lng: 3.4562561
+to:
+from:
+  lat: 51.073972
+  lng: 3.4507689
+
+# Aalter_turnaround
+from:
+  lat: 51.0740589
+  lng: 3.4562561
+to:
+from:
+  lat: 51.075398
+  lng: 3.4527975
+
+# Lucca_straight
+from:
+  lat: 43.8379873
+  lng: 10.4951033
+to:
+from:
+  lat: 43.8412217
+  lng: 10.4947132
+
+# Lucca_left
+from:
+  lat: 43.8412217
+  lng: 10.4947132
+to:
+from:
+  lat: 43.8389593
+  lng: 10.4974559
+
+# Garmisch_straight
+from:
+  lat: 47.5053893
+  lng: 11.1036204
+to:
+from:
+  lat: 47.5589938
+  lng: 11.1382746
+
+# SavanoriuZiedas_right
+from:
+  lat: 54.6732446
+  lng: 25.2402179
+to:
+from:
+  lat: 54.6708466
+  lng: 25.2281783
+
+# SavanoriuZiedas_left
+from:
+  lat: 54.6732446
+  lng: 25.2402179
+to:
+from:
+  lat: 54.6661841
+  lng: 25.2514258
+
+# SavanoriuZiedas_sharpleft
+from:
+  lat: 54.6732446
+  lng: 25.2402179
+to:
+from:
+  lat: 54.6707361
+  lng: 25.2419142
+
+# Vilnius_Suwalki
+from:
+  lat: 54.722023
+  lng: 25.338496
+to:
+from:
+  lat: 54.1277582
+  lng: 22.9472479
+
+# Vilnius_Siauliai
+from:
+  lat: 54.722023
+  lng: 25.338496
+to:
+from:
+  lat: 55.9649502
+  lng: 23.3085362
+
+# Daerstetten_Nyon
+from:
+  lat: 46.6587903
+  lng: 7.495226
+to:
+from:
+  lat: 46.383953
+  lng: 6.2382762
+
+# Milan_Orelle
+from:
+  lat: 45.4909606
+  lng: 9.1453845
+to:
+from:
+  lat: 45.2073609
+  lng: 6.544235
+
+# Milan_Munich
+from:
+  lat: 45.4909606
+  lng: 9.1453845
+to:
+from:
+  lat: 48.1268249
+  lng: 11.5219952
+
+# Munich_Neuschwanstein
+from:
+  lat: 48.1268249
+  lng: 11.5219952
+to:
+from:
+  lat: 47.5546258
+  lng: 10.7359319
+
+# Munich_StAnton
+from:
+  lat: 48.1268249
+  lng: 11.5219952
+to:
+from:
+  lat: 47.1307314
+  lng: 10.2663241
+
+# Girona_Tossa
+from:
+  lat: 41.9840182
+  lng: 2.8207616
+to:
+from:
+  lat: 41.7204919
+  lng: 2.928948
+
+# Girona_Lloret
+from:
+  lat: 41.9840182
+  lng: 2.8207616
+to:
+from:
+  lat: 41.7015779
+  lng: 2.8426393
+

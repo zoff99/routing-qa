@@ -1,0 +1,14 @@
+# interchange with distributor lanes
+# Brugge
+from:
+  lat: 51.1386845
+  lng: 3.2515552
+to:
+  lat: 51.1720398
+  lng: 3.2098421
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

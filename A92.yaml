@@ -1,0 +1,14 @@
+# Tests for missing or unnecessary announcements
+# A92
+from:
+  lat: 48.5364928
+  lng: 12.1517654
+to:
+  lat: 48.2266316
+  lng: 11.4676387
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

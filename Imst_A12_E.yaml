@@ -1,0 +1,14 @@
+# control (expected: keep right)
+# Imst_A12_E
+from:
+  lat: 47.2227609
+  lng: 10.7519953
+to:
+  lat: 47.237412
+  lng: 10.8440223
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'

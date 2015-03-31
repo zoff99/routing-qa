@@ -1,0 +1,14 @@
+# Tests for missing or unnecessary announcements
+# Vievis
+from:
+  lat: 54.871362
+  lng: 25.0643171
+to:
+  lat: 54.7693774
+  lng: 24.8158205
+
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 1
+    operator: '>'
