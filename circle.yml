@@ -12,6 +12,8 @@ dependencies:
     - sudo pip install pyyaml
     - sudo pip install junit-xml
     - git clone https://github.com/navit-gps/navit.git
+    - git checkout $CIRCLE_BRANCH:
+        pwd: navit/
     - mkdir bin
     - cmake ../navit -Dgraphics/qt_qpainter:BOOL=FALSE -Dgui/qml:BOOL=FALSE:
         pwd: bin
