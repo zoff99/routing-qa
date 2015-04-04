@@ -1,6 +1,6 @@
 dependencies:
   pre:
-    - wget -c -O ~/assets/california-latest.bin https://circle-artifacts.com/gh/navit-gps/navit/43/artifacts/0/home/ubuntu/assets/binmaps/california-latest.bin
+    - wget -c -O ~/assets/north-america.bin https://circle-artifacts.com/gh/navit-gps/maptool/37/artifacts/0/tmp/circle-artifacts.gKRmOfb/north-america.bin
     - wget -c -O ~/assets/europe-germany.bin https://circle-artifacts.com/gh/navit-gps/maptool/110/artifacts/0/tmp/circle-artifacts.NI6ITRc/europe-germany.bin
     - sudo apt-get install cmake
     - sudo apt-get install libpng12-dev 
@@ -32,7 +32,7 @@ test:
     - sed -i -e 's@libbinding_dbus.so" active="no"@libbinding_dbus.so" active="yes"@' navit.xml:
         pwd: bin/navit/
 # FIXME : maps should be defined in the yaml and managed via the python script
-    - echo '<map type="binfile" data="~/assets/california-latest.bin" />' > maps/california.xml:
+    - echo '<map type="binfile" data="~/assets/north-america.bin" />' > maps/north-america.xml:
         pwd: bin/navit/
     - echo '<map type="binfile" data="~/assets/europe-germany.bin" />' > maps/germany.xml:
         pwd: bin/navit/
