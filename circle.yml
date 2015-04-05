@@ -8,6 +8,7 @@ dependencies:
     - wget -c -O ~/maps/europe-italy.bin https://circle-artifacts.com/gh/navit-gps/maptool/117/artifacts/0/tmp/circle-artifacts.JKT2jYL/europe-italy.bin
     - wget -c -O ~/maps/europe-lithuania.bin https://circle-artifacts.com/gh/navit-gps/maptool/121/artifacts/0/tmp/circle-artifacts.9nyWpB6/europe-lithuania.bin
     - wget -c -O ~/maps/europe-netherlands.bin https://circle-artifacts.com/gh/navit-gps/maptool/128/artifacts/0/tmp/circle-artifacts.0wbI5Nq/europe-netherlands.bin
+    - wget -c -O ~/maps/europe-poland.bin https://circle-artifacts.com/gh/navit-gps/maptool/130/artifacts/0/tmp/circle-artifacts.CeXtgnB/europe-poland.bin
     - wget -c -O ~/maps/europe-spain.bin https://circle-artifacts.com/gh/navit-gps/maptool/137/artifacts/0/tmp/circle-artifacts.9IO1Oha/europe-spain.bin
     - wget -c -O ~/maps/europe-switzerland.bin https://circle-artifacts.com/gh/navit-gps/maptool/139/artifacts/0/tmp/circle-artifacts.FHBlHGk/europe-switzerland.bin
     - sudo apt-get install cmake
@@ -53,6 +54,8 @@ test:
     - echo '<map type="binfile" data="~/maps/europe-lithuania.bin" />' > maps/lithuania.xml:
         pwd: bin/navit/
     - echo '<map type="binfile" data="~/maps/europe-netherlands.bin" />' > maps/netherlands.xml:
+        pwd: bin/navit/
+    - echo '<map type="binfile" data="~/maps/europe-poland.bin" />' > maps/poland.xml:
         pwd: bin/navit/
     - echo '<map type="binfile" data="~/maps/europe-spain.bin" />' > maps/spain.xml:
         pwd: bin/navit/

@@ -1,9 +1,11 @@
 #Vilnius_Augustow 25.338496 54.722023 22.9639599 53.8329705
 # Vilnius_Suwalki
 from:
+# Lithuania
   lat: 54.722023
   lng: 25.338496
 to:
+# Poland
   lat: 54.1277582
   lng: 22.9472479
 
