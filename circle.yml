@@ -2,8 +2,10 @@ dependencies:
   pre:
     - "[ -d ~/maps ] || mkdir ~/maps"
     - wget -c -O ~/maps/north-america.bin https://circle-artifacts.com/gh/navit-gps/maptool/37/artifacts/0/tmp/circle-artifacts.gKRmOfb/north-america.bin
-    - wget -c -O ~/maps/europe-germany.bin https://circle-artifacts.com/gh/navit-gps/maptool/110/artifacts/0/tmp/circle-artifacts.NI6ITRc/europe-germany.bin
     - wget -c -O ~/maps/europe-belgium.bin https://circle-artifacts.com/gh/navit-gps/maptool/98/artifacts/0/tmp/circle-artifacts.srRUrXI/europe-belgium.bin
+    - wget -c -O ~/maps/europe-italy.bin https://circle-artifacts.com/gh/navit-gps/maptool/117/artifacts/0/tmp/circle-artifacts.JKT2jYL/europe-italy.bin
+    - wget -c -O ~/maps/europe-germany.bin https://circle-artifacts.com/gh/navit-gps/maptool/110/artifacts/0/tmp/circle-artifacts.NI6ITRc/europe-germany.bin
+    - wget -c -O ~/maps/europe-switzerland.bin https://circle-artifacts.com/gh/navit-gps/maptool/139/artifacts/0/tmp/circle-artifacts.FHBlHGk/europe-switzerland.bin
     - sudo apt-get install cmake
     - sudo apt-get install libpng12-dev 
     - sudo apt-get install libgtk2.0-dev 
@@ -39,6 +41,10 @@ test:
     - echo '<map type="binfile" data="~/maps/europe-belgium.bin" />' > maps/belgium.xml:
         pwd: bin/navit/
     - echo '<map type="binfile" data="~/maps/europe-germany.bin" />' > maps/germany.xml:
+        pwd: bin/navit/
+    - echo '<map type="binfile" data="~/maps/europe-italy.bin" />' > maps/italy.xml:
+        pwd: bin/navit/
+    - echo '<map type="binfile" data="~/maps/europe-switzerland.bin" />' > maps/switzerland.xml:
         pwd: bin/navit/
     - ./navit:
         pwd: bin/navit/
