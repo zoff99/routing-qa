@@ -1,0 +1,12 @@
+# This resulted in a no route found
+from:
+  lat: 37.837796
+  lng: -122.276037
+to:
+  lat: 37.6602491
+  lng: -119.8528002
+success:
+    source: 'dbus'
+    item: 'status'
+    value: 33
+    operator: '=='
