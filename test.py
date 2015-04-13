@@ -39,10 +39,10 @@ if not os.path.exists(junit_directory):
 
 tests=[]
 for filename in glob.glob('*.yaml'):
-    print "Testing "+filename
     f = open(filename)
     dataMap = yaml.safe_load(f)
     f.close()
+    print "Testing "+filename+" : "+str(dataMap['from']['lat']) + "," + str(dataMap['from']['lng']) +" to "+str(dataMap['to']['lat']) + "," + str(dataMap['to']['lng'])
     start_time = time.time()
     try:
         navit.set_center_by_string("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
