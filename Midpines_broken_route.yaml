@@ -1,4 +1,4 @@
-# Tests for missing or unnecessary announcements
+# Routing is broken between those points
 # Related trac ticket : #1296
 from:
   lat: 37.559892
