@@ -63,6 +63,8 @@ for filename in glob.glob('*.yaml'):
         if timeout>0 :
             navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
             navit.export_as_geojson(gpx_directory+"/"+filename + ".geojson")
+            navit.zoom_to_route()
+            os.system("/usr/bin/import -window root "+gpx_directory+"/"+filename+".png")
         else:
             print "No route found, last status : " + str(status) + ", duration : "+str(time.time() - start_time)
 
