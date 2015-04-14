@@ -46,7 +46,6 @@ for filename in glob.glob('*.yaml'):
     print "http://www.openstreetmap.org/directions?engine=osrm_car&route="+str(dataMap['from']['lat']) + "%2C" + str(dataMap['from']['lng']) +"%3B"+str(dataMap['to']['lat']) + "%2C"+ str(dataMap['to']['lng'])
     start_time = time.time()
     try:
-        navit.set_center_by_string("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
         navit.clear_destination()
         navit.set_position("geo: "+str(dataMap['from']['lng']) + " " + str(dataMap['from']['lat']))
         navit.set_destination("geo: "+str(dataMap['to']['lng']) + " " + str(dataMap['to']['lat']),"python dbus")
@@ -64,7 +63,16 @@ for filename in glob.glob('*.yaml'):
         if timeout>0 :
             navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
             navit.export_as_geojson(gpx_directory+"/"+filename + ".geojson")
-            navit.zoom_to_route()
+            if 'capture' in dataMap:
+               if 'zoom_level' in dataMap['capture']:
+                 print "Forcing zoom to "+str(dataMap['capture']['zoom_level'])
+                 iface2 = dbus.Interface(navit_object, dbus_interface="org.navit_project.navit.navit")
+                 iface2.set_attr("zoom", dataMap['capture']['zoom_level'])
+               if 'lng' in dataMap['capture']:
+                 print "Setting the view center to "+str(dataMap['capture']['lng']) + "," + str(dataMap['capture']['lat'])
+                 navit.set_center_by_string("geo: "+str(dataMap['capture']['lng']) + " " + str(dataMap['capture']['lat']))
+            else:
+                navit.zoom_to_route()
             os.system("/usr/bin/import -window root "+gpx_directory+"/"+filename+".png")
         else:
             print "No route found, last status : " + str(status) + ", duration : "+str(time.time() - start_time)
