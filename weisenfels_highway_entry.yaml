@@ -4,8 +4,8 @@ from:
   lat: 51.3704027
   lng: 11.9215424
 to:
-  lat: 51.365570
-  lng: 11.913694
+  lat: 51.204014
+  lng: 11.966423
 
 success:
     source: 'dbus'
