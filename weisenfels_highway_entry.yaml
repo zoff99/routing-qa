@@ -6,7 +6,10 @@ from:
 to:
   lat: 51.204014
   lng: 11.966423
-
+capture:
+  lat: 51.370095
+  lng: 11.912739
+  zoom_level: 1000
 success:
     source: 'dbus'
     item: 'status'
