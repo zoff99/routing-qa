@@ -37,6 +37,8 @@ junit_directory=sys.argv[2]
 if not os.path.exists(junit_directory):
     os.makedirs(junit_directory)
 
+export_suffix=sys.argv[3]
+
 tests=[]
 for filename in glob.glob('*.yaml'):
     f = open(filename)
@@ -61,8 +63,8 @@ for filename in glob.glob('*.yaml'):
                time.sleep(1)
             timeout-=1
         if timeout>0 :
-            navit.export_as_gpx(gpx_directory+"/"+filename + ".gpx")
-            navit.export_as_geojson(gpx_directory+"/"+filename + ".geojson")
+            navit.export_as_gpx(gpx_directory+"/"+filename + export_suffix + ".gpx")
+            navit.export_as_geojson(gpx_directory+"/"+filename + export_suffix + ".geojson")
             if 'capture' in dataMap:
                if 'zoom_level' in dataMap['capture']:
                  print "Forcing zoom to "+str(dataMap['capture']['zoom_level'])
@@ -73,13 +75,13 @@ for filename in glob.glob('*.yaml'):
                  navit.set_center_by_string("geo: "+str(dataMap['capture']['lng']) + " " + str(dataMap['capture']['lat']))
             else:
                 navit.zoom_to_route()
-            os.system("/usr/bin/import -window root "+gpx_directory+"/"+filename+".png")
+            os.system("/usr/bin/import -window root "+gpx_directory+"/"+filename+export_suffix + ".png")
         else:
             print "No route found, last status : " + str(status) + ", duration : "+str(time.time() - start_time)
 
         test_cases = TestCase(filename, '', time.time() - start_time, '', '')
         if dataMap['success']['source'] == 'gpx' :
-            doc = lxml.etree.parse(gpx_directory+"/"+filename+".gpx")
+            doc = lxml.etree.parse(gpx_directory+"/"+filename+export_suffix + ".gpx")
             rtept_count = doc.xpath('count(//rtept)')
         
             if not(eval(str(rtept_count) + dataMap['success']['operator'] + str(dataMap['success']['value']))):
