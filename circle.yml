@@ -1,9 +1,12 @@
 dependencies:
   pre:
     - "[ -d ~/maps ] || mkdir ~/maps"
-    - wget -c -O ~/maps/north-america.bin https://circle-artifacts.com/gh/navit-gps/maptool/37/artifacts/0/tmp/circle-artifacts.gKRmOfb/north-america.bin
-    - wget -c -O ~/maps/europe-austria.bin https://circle-artifacts.com/gh/navit-gps/maptool/95/artifacts/0/tmp/circle-artifacts.p8HFDuA/europe-austria.bin
-    - wget -c -O ~/maps/europe-belgium.bin https://circle-artifacts.com/gh/navit-gps/maptool/98/artifacts/0/tmp/circle-artifacts.srRUrXI/europe-belgium.bin
+#    - wget -c -O ~/maps/north-america.bin https://circle-artifacts.com/gh/navit-gps/maptool/37/artifacts/0/tmp/circle-artifacts.gKRmOfb/north-america.bin
+    - wget -c -O ~/maps/north-america.bin "http://maps.navit-project.org/api/map/?bbox=-125.4,24.3,-66.5,49.3&timestamp=150710"
+#    - wget -c -O ~/maps/europe-austria.bin https://circle-artifacts.com/gh/navit-gps/maptool/95/artifacts/0/tmp/circle-artifacts.p8HFDuA/europe-austria.bin
+    - wget -c -O ~/maps/europe-austria.bin "http://maps.navit-project.org/api/map/?bbox=9.4,46.32,17.21,49.1&timestamp=150710"
+#    - wget -c -O ~/maps/europe-belgium.bin https://circle-artifacts.com/gh/navit-gps/maptool/98/artifacts/0/tmp/circle-artifacts.srRUrXI/europe-belgium.bin
+    - wget -c -O ~/maps/europe-belgium.bin "http://maps.navit-project.org/api/map/?bbox=2.08,48.87,7.78,54.52&timestamp=150710"
     - wget -c -O ~/maps/europe-france.bin https://circle-artifacts.com/gh/navit-gps/maptool/108/artifacts/0/tmp/circle-artifacts.pM8yZpL/europe-france.bin
     - wget -c -O ~/maps/europe-germany.bin https://circle-artifacts.com/gh/navit-gps/maptool/110/artifacts/0/tmp/circle-artifacts.NI6ITRc/europe-germany.bin
     - wget -c -O ~/maps/europe-italy.bin https://circle-artifacts.com/gh/navit-gps/maptool/117/artifacts/0/tmp/circle-artifacts.JKT2jYL/europe-italy.bin
