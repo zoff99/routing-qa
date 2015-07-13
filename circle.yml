@@ -69,7 +69,7 @@ test:
         background: true
     - python test.py $CIRCLE_ARTIFACTS/ $CIRCLE_TEST_REPORTS/ "metric"
     - dbus-send  --print-reply --session --dest=org.navit_project.navit /org/navit_project/navit/default_navit org.navit_project.navit.navit.quit
-    - sed -i -e '/navit center=/navit imperial="1" center=/' navit.xml:
+    - sed -i -e 's/navit center=/navit imperial="1" center=/' navit.xml:
         pwd: bin/navit/
     - ./navit:
         pwd: bin/navit/
