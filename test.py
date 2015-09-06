@@ -96,7 +96,7 @@ for filename in glob.glob('*.yaml'):
 
        print "This test failed. Maybe a missing map?"
        test_cases = TestCase(filename, '', time.time() - start_time, '', '')
-       test_cases.add_error_info('test failed')
+       test_cases.add_failure_info('test failed')
     tests.append(test_cases)
 
 ts = [TestSuite("Navit routing tests", tests)]
