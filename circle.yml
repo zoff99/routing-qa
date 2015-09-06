@@ -41,6 +41,8 @@ test:
         pwd: bin/navit/
     - sed -i -e 's@libbinding_dbus.so" active="no"@libbinding_dbus.so" active="yes"@' navit.xml:
         pwd: bin/navit/
+    - sed -i -e 's@name="Car" nightlayout="Car-dark"@name="Car"@' navit.xml:
+        pwd: bin/navit/
 # FIXME : maps should be defined in the yaml and managed via the python script
     - echo '<map type="binfile" data="~/maps/north-america.bin" />' > maps/north-america.xml:
         pwd: bin/navit/
