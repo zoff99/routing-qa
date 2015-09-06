@@ -14,7 +14,7 @@ dependencies:
     - wget -c -O ~/maps/europe-switzerland.bin https://circle-artifacts.com/gh/navit-gps/maptool/139/artifacts/0/tmp/circle-artifacts.FHBlHGk/europe-switzerland.bin
     - sudo apt-get install cmake
     - sudo apt-get install libpng12-dev 
-    - sudo apt-get install libgtk2.0-dev 
+  #  - sudo apt-get install libgtk2.0-dev 
     - sudo apt-get install librsvg2-bin 
     - sudo apt-get install libfreetype6-dev
     - sudo apt-get install libdbus-glib-1-dev
