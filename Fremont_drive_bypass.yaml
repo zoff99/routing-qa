@@ -8,6 +8,6 @@ to:
 
 success:
     source: 'dbus'
-    item: 'status'
-    value: 33
-    operator: '=='
+    item: 'distance'
+    value: 540
+    operator: '<'
