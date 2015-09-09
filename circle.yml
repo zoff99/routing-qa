@@ -69,10 +69,10 @@ test:
     - ./navit:
         pwd: bin/navit/
         background: true
-    - python test.py $CIRCLE_ARTIFACTS/ $CIRCLE_TEST_REPORTS/ "metric"
-    - dbus-send  --print-reply --session --dest=org.navit_project.navit /org/navit_project/navit/default_navit org.navit_project.navit.navit.quit
     - echo 'navit.mapset.map[@description=="Navigation"].active=1;' > gui_internal.txt:
         pwd: bin/navit/
+    - python test.py $CIRCLE_ARTIFACTS/ $CIRCLE_TEST_REPORTS/ "metric"
+    - dbus-send  --print-reply --session --dest=org.navit_project.navit /org/navit_project/navit/default_navit org.navit_project.navit.navit.quit
     - sed -i -e 's/navit center=/navit imperial="1" center=/' navit.xml:
         pwd: bin/navit/
     - ./navit:
