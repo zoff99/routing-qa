@@ -9,5 +9,5 @@ to:
 success:
     source: 'dbus'
     item: 'status'
-    value: 17
-    operator: '>'
+    value: 33
+    operator: '=='
