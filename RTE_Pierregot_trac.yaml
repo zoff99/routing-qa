@@ -1,0 +1,13 @@
+# don't use the trac
+from:
+  lat: 50.0115
+  lng: 2.3846
+to:
+  lat: 50.0031
+  lng: 2.3854
+
+success:
+    source: 'dbus'
+    item: 'distance'
+    value: 1250
+    operator: '>'
