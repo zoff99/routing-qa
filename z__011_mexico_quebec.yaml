@@ -1,9 +1,9 @@
 # route is almost 6.000 km long
 #
 from:
-  lat: 19.42731
-  lng: -99.14081
-  heading: 90
+  lat: 33.46201
+  lng: -111.99508
+  heading: 0
 to:
   lat: 41.41888
   lng: -75.61529
