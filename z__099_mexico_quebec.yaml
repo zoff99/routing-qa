@@ -1,12 +1,12 @@
 # route is almost 6.000 km long
 #
 from:
-  lat: 19.42731
-  lng: -99.14081
-  heading: 90
+  lat: 19.5373
+  lng: -99.2040
+  heading: 190
 to:
-  lat: 53.99120
-  lng: -71.98982
+  lat: 41.41888
+  lng: -75.61529
 success:
     source: 'dbus'
     item: 'status'
