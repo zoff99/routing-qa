@@ -1,0 +1,14 @@
+# test heading parameter
+from:
+  lat: 47.53916
+  lng: 19.04749
+  heading: 275.3
+to:
+  lat: 47.53986
+  lng: 19.04499
+
+success:
+    source: 'dbus'
+    item: 'status'
+    value: 33
+    operator: '=='
