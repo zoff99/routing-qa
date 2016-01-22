@@ -1,13 +1,9 @@
-# Make a loop to handle turn restriction
-from:
-  lat: 48.27989
-  lng: 16.46291
-  heading: 93
-to:
-  lat: 48.27917
-  lng: 16.45989
+type: 'NS'
+input:
+  street: burgga
+  city: wien
+  housenumber: 
 success:
-    source: 'dbus'
-    item: 'status'
-    value: 33
+    item: 'resultcount'
+    value: 3
     operator: '=='
