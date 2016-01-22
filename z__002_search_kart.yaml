@@ -1,0 +1,9 @@
+type: 'NS'
+input:
+  street: kart
+  city: 
+  housenumber: 1
+success:
+    item: 'resultcount'
+    value: 3
+    operator: '=='
