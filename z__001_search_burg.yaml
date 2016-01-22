@@ -2,8 +2,8 @@ type: 'NS'
 input:
   street: burgga
   city: wien
-  housenumber: 
+  housenumber: 23
 success:
     item: 'resultcount'
-    value: 3
+    value: 1
     operator: '=='
