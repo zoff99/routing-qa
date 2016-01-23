@@ -1,8 +1,8 @@
 type: 'NS'
 input:
-  street: kart
-  city: 
-  housenumber: 1
+  street: gustav
+  city: garden
+  housenumber: 
 success:
     item: 'resultcount'
     value: 3
