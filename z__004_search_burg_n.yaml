@@ -2,7 +2,7 @@ type: 'NS'
 input:
   street: burgga
   city: wien
-  housenumber: 23
+  housenumber: 
 success:
     item: 'resultcount'
     value: 1
