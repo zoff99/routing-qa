@@ -1,9 +1,0 @@
-type: 'NS'
-input:
-  street: gustav
-  city: garden
-  housenumber: 
-success:
-    item: 'resultcount'
-    value: 3
-    operator: '=='
