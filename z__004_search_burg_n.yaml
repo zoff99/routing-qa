@@ -1,9 +1,0 @@
-type: 'NS'
-input:
-  street: burgga
-  city: wien
-  housenumber: 
-success:
-    item: 'resultcount'
-    value: 1
-    operator: '=='
