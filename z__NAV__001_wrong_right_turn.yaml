@@ -1,6 +1,7 @@
 from:
   lat: 48.25170
   lng: 16.42885
+  heading: 280
 to:
   lat: 48.25247
   lng: 16.42804
