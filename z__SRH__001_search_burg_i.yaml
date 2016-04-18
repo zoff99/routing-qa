@@ -1,0 +1,9 @@
+type: 'IS'
+input:
+  street: burgga
+  city: wien
+  housenumber: 23
+success:
+    item: 'resultcount'
+    value: 1
+    operator: '=='
