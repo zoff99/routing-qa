@@ -6,7 +6,7 @@ to:
   lat: 48.25247
   lng: 16.42804
 success:
-    source: 'dbus'
-    item: 'status'
-    value: 33
+    source: 'gpx'
+    item: 'nav1'
+    value: nav_right_2
     operator: '=='
