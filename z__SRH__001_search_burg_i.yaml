@@ -6,4 +6,4 @@ input:
 success:
     item: 'resultcount'
     value: 1
-    operator: '=='
+    operator: '>'
