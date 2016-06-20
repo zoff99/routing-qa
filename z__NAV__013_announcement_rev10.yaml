@@ -1,0 +1,11 @@
+from:
+  lat: 48.21767
+  lng: 16.48353
+to:
+  lat: 48.21778
+  lng: 16.48418
+success:
+    source: 'gpx'
+    item: 'nav1'
+    value: nav_right_2
+    operator: '=='
