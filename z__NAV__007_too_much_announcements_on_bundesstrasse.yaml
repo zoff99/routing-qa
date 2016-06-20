@@ -1,10 +1,10 @@
 from:
-  lat: 48.23401
-  lng: 16.39354
+  lat: 48.39394
+  lng: 16.16560
   heading: 300
 to:
-  lat: 48.23508
-  lng: 16.39319
+  lat: 48.6332
+  lng: 15.8181
 success:
     source: 'gpx'
     item: 'nodes'
