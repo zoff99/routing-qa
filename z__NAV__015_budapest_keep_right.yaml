@@ -2,6 +2,7 @@
 from:
   lat: 47.53916
   lng: 19.04749
+  heading: 300
 to:
   lat: 47.53986
   lng: 19.04499
