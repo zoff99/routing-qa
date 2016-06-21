@@ -8,5 +8,5 @@ to:
 success:
     source: 'gpx'
     item: 'nav1'
-    value: nav_xxx
+    value: nav_left_2
     operator: '=='
