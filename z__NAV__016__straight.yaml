@@ -1,0 +1,13 @@
+# -
+from:
+  lat: 48.18405
+  lng: 16.38504
+  heading: 200
+to:
+  lat: 48.18346
+  lng: 16.38372
+success:
+    source: 'gpx'
+    item: 'nodes'
+    value: 2
+    operator: '=='
