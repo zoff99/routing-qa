@@ -7,6 +7,6 @@ to:
   lng: 15.93458
 success:
     source: 'gpx'
-    item: 'nodes'
-    value: 2
+    item: 'nav1'
+    value: nav_left_1
     operator: '=='
