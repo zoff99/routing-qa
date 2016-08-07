@@ -1,0 +1,17 @@
+# 0   -> up
+# 270 -> left
+# 90  -> right
+# 180 -> down
+#
+from:
+  lat: 48.22467
+  lng: 16.35228
+  heading: 90
+to:
+  lat: 48.22488
+  lng: 16.35644
+success:
+    source: 'gpx'
+    item: 'nav1'
+    value: nav_left_1
+    operator: '=='
